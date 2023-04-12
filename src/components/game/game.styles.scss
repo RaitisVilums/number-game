@@ -1,0 +1,75 @@
+.game {
+  padding: 4rem 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+
+  & h1 {
+    font-size: 3rem;
+  }
+
+  &-board {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  &-numbers {
+    font-size: 2rem;
+    display: flex;
+    gap: 2rem;
+
+    & span {
+      cursor: pointer;
+      padding: 1rem;
+      border: 1px solid white;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        background: #0d398b;
+        color: #fff;
+      }
+    }
+  }
+
+  &-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  &-chosen-numbers {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-result {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  &-btn {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+    font-size: 2rem;
+    padding: 1rem 5rem;
+    background: #0d398b;
+    font-weight: 700;
+    border-radius: 1.5rem;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    font-family: inherit;
+    border: none;
+
+    &:hover {
+      background: #fff;
+      color: #0d398b;
+    }
+  }
+}

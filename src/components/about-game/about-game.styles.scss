@@ -1,0 +1,35 @@
+.about {
+  width: 100%;
+  height: 100%;
+  padding: 4rem 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &-heading {
+    font-size: 3rem;
+  }
+
+  &-description {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+
+  &-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+    font-size: 2rem;
+    padding: 1rem 5rem;
+    background: #0d398b;
+    font-weight: 700;
+    border-radius: 1.5rem;
+    transition: all 0.2s ease-in;
+    font-family: inherit;
+
+    &:hover {
+      background: #fff;
+      color: #0d398b;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+.game-layout {
+  height: 100%;
+  padding: 4rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4rem;
+  position: relative;
+  & h1 {
+    font-size: 3rem;
+  }
+
+  &-btns {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+
+  &-btns-input {
+    display: none;
+  }
+  &-btns-label {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    background: #0d398b;
+    border-radius: 1.5rem;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+  }
+  &-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+    font-size: 2rem;
+    padding: 1rem 5rem;
+    background: #0d398b;
+    font-weight: 700;
+    border-radius: 1.5rem;
+    transition: all 0.2s ease-in;
+    font-family: inherit;
+
+    &:hover {
+      background: #fff;
+      color: #0d398b;
+    }
+  }
+  &-absolute {
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+    font-family: inherit;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+    font-size: 2rem;
+    padding: 1rem 5rem;
+    background: #0d398b;
+    font-weight: 700;
+    border-radius: 1.5rem;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      background: #fff;
+      color: #0d398b;
+    }
+  }
+}
+
+.game-layout-btns-input:checked + .game-layout-btns-label {
+  background: #fff;
+  color: #0d398b;
+}
